@@ -285,7 +285,12 @@ Linear Regression<br>
 <p>Random scatter plot of <span class="math inline">\(r_i\)</span> against fitted values or independent variables suggest that the model is correct. Performing a normal probability plot of the residuals against the rank ordered residuals checks the normality assumption. A near perfect positive linear relationship indicates that the normality assumption is valid.</p>
 <p>When variance increases with increasing x, try transformation such as <span class="math inline">\(log_e(y)\)</span>, square root, reciprocal, arcsin, etc. When variance decreases with increasing x, e.g.&nbsp;deaths from increasing fungicide concentration. Square transformation would be necessary. Double blow occurs when y is a binomial proportion. Lack of linearly indicated when residual plots show a quadratic pattern. This indicates a missing squared term in the model.</p>
 <p>At this stage, it may be necessary or desirable to examine whether the necessary assumptions for regression analysis have been satisfied:</p>
-<pre><code>   a)   Is the relationship between X and Y linear (i.e. is the model correct?).    b)   Do the residuals have a normal distribution? [This is necessary for significance tests, confidence intervals etc].    c)   Is the residual variance constant? [Should not depend on X]    </code></pre>
+<pre><code>   a)   Is the relationship between X and Y linear (i.e. is the model correct?). 
+   
+   
+   b)   Do the residuals have a normal distribution? [This is necessary for significance tests, confidence intervals etc].   
+   
+   c)   Is the residual variance constant? [Should not depend on X]    </code></pre>
 </section>
 <section id="example" class="level2">
 <h2 class="anchored" data-anchor-id="example"><span style="color: #002D62;">Example</span></h2>
@@ -394,19 +399,27 @@ F-statistic: 14.15 on 1 and 56 DF,  p-value: 0.0004049</code></pre>
 <p><strong>Coefficients:</strong> The next results show parameter estimates for intercept and the dependent variable – height. The estimates are shown, followed by their standard errors. The next is the t statistic and the probabilities for testing the null hypothesis that the parameter is not significantly different from zero. These probabilities are referred to as p-values.</p>
 <p><b></b></p><b>
 <p style="text-align: center; color:#007FFF;">
-</p><pre><code> In this example, the intercept term in the model is estimated to be 3.0799 and is significantly different from zero.  The residual standard error is: 0.4327 on 56 degree of freedom (df). </code></pre>
+</p><pre><code> In this example, the intercept term in the model is estimated to be 3.0799 and is significantly different from zero. 
+ 
+ The residual standard error is: 0.4327 on 56 degree of freedom (df). </code></pre>
 <p></p>
 </b><p><b></b> The <strong>R-squared</strong> is a measure for evaluating the goodness of fit of the model. it determines the percentage of variability of the dependent variable (yield) explained by the predictor variable (height). The closer this value is to 1, the better the fit. The Adjusted R-squared is used to correct the increase of the R-squared with the increase of the predictor.</p>
 <p><b></b></p><b>
 <p style="text-align: center; color:#007FFF;">
-</p><pre><code>For example in our model with a R square of 0.2018 which indicate that 20.2% of the variability in the yield is accounted for by the height of the cowpea, A significant amount of the information is not explained by the model. Consequently, additional predictors can be added to the model to improve the quality of the fit.  </code></pre>
+</p><pre><code>For example in our model with a R square of 0.2018 which indicate that 20.2% of the variability in the yield is accounted for by the height of the cowpea, A significant amount of the information is not explained by the model.
+
+Consequently, additional predictors can be added to the model to improve the quality of the fit.  </code></pre>
 <p></p>
 </b><p><b></b></p>
 <p><strong>Significance:</strong> These significance codes are displayed below the Coefficients section, with significance at respectively 1%, 5%, and 10% levels denoted with two stars (**), one star (*), and a dot (.). A statistically insignificant coefficient (e.g.&nbsp;p-value &gt; 0.05) does not necessarily imply the absence of an effect. Instead, it suggests that the evidence against the null hypothesis (i.e., no effect) is not strong enough to reject it. When reporting non-significant results, it is more accurate to state that you don’t find evidence for a relationship between X and Y, rather than concluding there is no relationship.</p>
 <p><strong>F-Statistic:</strong> The F-statistic and its associated p-value are used to test the overall significance of the regression model. The null hypothesis assumes no relationship between the independent variables and the dependent variable, while the alternative hypothesis suggests otherwise. While the F-statistic assesses the overall fit of the model, it’s generally better to rely on the p-value for determining the significance of the relationship between the variables.</p>
 <p><b></b></p><b>
 <p style="text-align: center; color:#007FFF;">
-</p><pre><code> Here, the F-statistic is 14.15 with a p-value of 0.0004049 which is less than 0.05. This means that the regression fits well.     Since the p-value of 0.0004049 is less than 0.05, so we reject the hypothesis that its estimate coefficient is zero. The coefficient is -1.1692 with a standard error of 0.3108. So the model predicts that the yeild of cowpea will decrease by -1.1692 metric tons for 1 meter of cowpea height.  </code></pre>
+</p><pre><code> Here, the F-statistic is 14.15 with a p-value of 0.0004049 which is less than 0.05. This means that the regression fits well.   
+ 
+ Since the p-value of 0.0004049 is less than 0.05, so we reject the hypothesis that its estimate coefficient is zero. The coefficient is -1.1692 with a standard error of 0.3108. 
+ 
+ So the model predicts that the yeild of cowpea will decrease by -1.1692 metric tons for 1 meter of cowpea height.  </code></pre>
 <p></p>
 </b><p><b></b></p>
 <p><strong>Residual Error:</strong> The residual standard error is an overall measure of how well the regression model fits the observed data. It indicates the average amount by which the observed values of the dependent variable (Y) deviate from the predicted values by the regression model, in the units of the dependent variable. It provides a summary measure of the overall model fit, and a smaller residual standard error indicates a prediction line of the model closer to the actual values on average. The residual error is normally plotted against the fitted values. The residuals is randomly distributed around the horizontal line i.e the scatter plots should by symmetric about the horizontal zero (see below plot).</p>
