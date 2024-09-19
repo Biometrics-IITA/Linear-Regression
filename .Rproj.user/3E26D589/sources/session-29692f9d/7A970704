@@ -1,14 +1,14 @@
 {
-    "id": "7D7EF231",
-    "path": "~/Github/Linear Regression/index.qmd",
-    "project_path": "index.qmd",
+    "id": "7A970704",
+    "path": "C:/Users/DOjekere/CGIAR/Fowobaje, Kayode Rapheal (IITA) - Training Materials/2024/R markdown/Linear Regression.qmd",
+    "project_path": null,
     "type": "quarto_markdown",
-    "hash": "4108678343",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1726756566146.0,
+    "created": 1726759433124.0,
     "source_on_save": false,
-    "relative_order": 1,
+    "relative_order": 3,
     "properties": {
         "rmdVisualMode": "true",
         "rmdVisualWrapConfigured": "true",
@@ -16,16 +16,14 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "25209:8750.400390625",
-        "cursorPosition": "0,0",
-        "scrollLine": "0"
+        "rmdVisualModeLocation": "55:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1726759600,
+    "lastKnownWriteTime": 1726515210,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1726759600301,
+    "last_content_update": 1726515210,
     "read_only": false,
     "read_only_alternatives": []
 }

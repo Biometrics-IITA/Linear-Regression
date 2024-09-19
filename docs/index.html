@@ -388,45 +388,41 @@ F-statistic: 14.15 on 1 and 56 DF,  p-value: 0.0004049</code></pre>
 <p>The summary output provides:</p>
 <p><b></b></p><b>
 <p style="text-align: center; color:#007FFF;">
-</p><pre><code>  Min: Minimum residual value (-1.06151)   
-  1Q: First quartile, the value below which the 25% of the residual lie (-0.30054).   
-  Median: Median, the midpoint of the residual values, separating the lower 50% from the upper 50% (0.01748).    
-  3Q: Third quartile, the value below which 75% of the residuals lie (0.29192).   
-  Max: Maximum residual value (1.13346)</code></pre>
+</p><p>Min: Minimum residual value (-1.06151)<br>
+1Q: First quartile, the value below which the 25% of the residual lie (-0.30054).<br>
+Median: Median, the midpoint of the residual values, separating the lower 50% from the upper 50% (0.01748).<br>
+3Q: Third quartile, the value below which 75% of the residuals lie (0.29192).<br>
+Max: Maximum residual value (1.13346)</p>
 <p></p>
 </b><p><b></b></p>
 <p>While the summary output can provide an initial insight into the distribution of residuals, it is typically not the primary tool for directly assessing the assumption on residuals.</p>
 <p><strong>Coefficients:</strong> The next results show parameter estimates for intercept and the dependent variable – height. The estimates are shown, followed by their standard errors. The next is the t statistic and the probabilities for testing the null hypothesis that the parameter is not significantly different from zero. These probabilities are referred to as p-values.</p>
 <p><b></b></p><b>
 <p style="text-align: center; color:#007FFF;">
-</p><pre><code> In this example, the intercept term in the model is estimated to be 3.0799 and is significantly different from zero. 
- 
- The residual standard error is: 0.4327 on 56 degree of freedom (df). </code></pre>
+</p><p>In this example, the intercept term in the model is estimated to be 3.0799 and is significantly different from zero.</p>
+<p>The residual standard error is: 0.4327 on 56 degree of freedom (df).</p>
 <p></p>
 </b><p><b></b> The <strong>R-squared</strong> is a measure for evaluating the goodness of fit of the model. it determines the percentage of variability of the dependent variable (yield) explained by the predictor variable (height). The closer this value is to 1, the better the fit. The Adjusted R-squared is used to correct the increase of the R-squared with the increase of the predictor.</p>
 <p><b></b></p><b>
 <p style="text-align: center; color:#007FFF;">
-</p><pre><code>For example in our model with a R square of 0.2018 which indicate that 20.2% of the variability in the yield is accounted for by the height of the cowpea, A significant amount of the information is not explained by the model.
-
-Consequently, additional predictors can be added to the model to improve the quality of the fit.  </code></pre>
+</p><p>For example in our model with a R square of 0.2018 which indicate that 20.2% of the variability in the yield is accounted for by the height of the cowpea, A significant amount of the information is not explained by the model.</p>
+<p>Consequently, additional predictors can be added to the model to improve the quality of the fit.</p>
 <p></p>
 </b><p><b></b></p>
 <p><strong>Significance:</strong> These significance codes are displayed below the Coefficients section, with significance at respectively 1%, 5%, and 10% levels denoted with two stars (**), one star (*), and a dot (.). A statistically insignificant coefficient (e.g.&nbsp;p-value &gt; 0.05) does not necessarily imply the absence of an effect. Instead, it suggests that the evidence against the null hypothesis (i.e., no effect) is not strong enough to reject it. When reporting non-significant results, it is more accurate to state that you don’t find evidence for a relationship between X and Y, rather than concluding there is no relationship.</p>
 <p><strong>F-Statistic:</strong> The F-statistic and its associated p-value are used to test the overall significance of the regression model. The null hypothesis assumes no relationship between the independent variables and the dependent variable, while the alternative hypothesis suggests otherwise. While the F-statistic assesses the overall fit of the model, it’s generally better to rely on the p-value for determining the significance of the relationship between the variables.</p>
 <p><b></b></p><b>
 <p style="text-align: center; color:#007FFF;">
-</p><pre><code> Here, the F-statistic is 14.15 with a p-value of 0.0004049 which is less than 0.05. This means that the regression fits well.   
- 
- Since the p-value of 0.0004049 is less than 0.05, so we reject the hypothesis that its estimate coefficient is zero. The coefficient is -1.1692 with a standard error of 0.3108. 
- 
- So the model predicts that the yeild of cowpea will decrease by -1.1692 metric tons for 1 meter of cowpea height.  </code></pre>
+</p><p>Here, the F-statistic is 14.15 with a p-value of 0.0004049 which is less than 0.05. This means that the regression fits well.</p>
+<p>Since the p-value of 0.0004049 is less than 0.05, so we reject the hypothesis that its estimate coefficient is zero. The coefficient is -1.1692 with a standard error of 0.3108.</p>
+<p>So the model predicts that the yeild of cowpea will decrease by -1.1692 metric tons for 1 meter of cowpea height.</p>
 <p></p>
 </b><p><b></b></p>
 <p><strong>Residual Error:</strong> The residual standard error is an overall measure of how well the regression model fits the observed data. It indicates the average amount by which the observed values of the dependent variable (Y) deviate from the predicted values by the regression model, in the units of the dependent variable. It provides a summary measure of the overall model fit, and a smaller residual standard error indicates a prediction line of the model closer to the actual values on average. The residual error is normally plotted against the fitted values. The residuals is randomly distributed around the horizontal line i.e the scatter plots should by symmetric about the horizontal zero (see below plot).</p>
 <p>The residuals can be assessed for normality using a Q–Q plot of standardized residuals. This compares the residuals to <code>“ideal”</code> normal observations. If the residuals plot (line) forms a straight line, then it comes from a normal distribution. In the presence of non-normal residuals, the resolution depends on the type of problem encountered. Verzani (2014) provides some definitions about distributions: “The tails of a distribution are the very large and very small values of the distribution. A distribution is called a long-tailed distribution if the data set contains values far from the body of the data. Alternatively, a distribution is called a short-tailed distribution if there are no values far from the body. A distribution is a skewed distribution if one tail is significantly longer than the other”. For short-tailed distributions, the consequences of non-normality are not serious and can reasonably be ignored. For long-tailed errors, the non-normality should be accepted and the inference should be based on the assumption of another distribution or use resampling methods such as the bootstrap or permutation tests. For skewed errors, a transformation of the response may solve the problem.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)) </span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Yield.ht, <span class="at">which =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)) </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Yield.ht, <span class="at">which =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -480,11 +476,11 @@ Consequently, additional predictors can be added to the model to improve the qua
 <h2 class="anchored" data-anchor-id="example-1"><span style="color: #002D62;">Example</span></h2>
 <p>Let us add to the previous model additional predictor: size, protein and oil</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#|tidy=FALSE</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">#|size='tiny'</span></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Multiple Linear Regression  </span></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>Yield.Height.Size <span class="ot">&lt;-</span> <span class="fu">lm</span>(yield <span class="sc">~</span> protein <span class="sc">+</span>height <span class="sc">+</span> size <span class="sc">+</span> oil, <span class="at">data=</span>dat) </span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(Yield.Height.Size)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#|tidy=FALSE</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co">#|size='tiny'</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Multiple Linear Regression  </span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>Yield.Height.Size <span class="ot">&lt;-</span> <span class="fu">lm</span>(yield <span class="sc">~</span> protein <span class="sc">+</span>height <span class="sc">+</span> size <span class="sc">+</span> oil, <span class="at">data=</span>dat) </span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(Yield.Height.Size)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -513,20 +509,20 @@ F-statistic: 25.29 on 4 and 53 DF,  p-value: 9.459e-12</code></pre>
 <p><strong>Coefficient</strong>- The <code>estimate</code> column is the estimated effect, also called the regression coefficient.</p>
 <p><b></b></p><b>
 <p style="text-align: center; color:#007FFF;">
-</p><pre><code>It shows that for 1 metric tons/hectare increase in yield, there is an estimated  0.005 decrease in protein, 1.326 increase in height, 0.024 increase in size and 0.212 increase in oil.</code></pre>
+</p><p>It shows that for 1 metric tons/hectare increase in yield, there is an estimated 0.005 decrease in protein, 1.326 increase in height, 0.024 increase in size and 0.212 increase in oil.</p>
 <p></p>
 </b><p><b></b></p>
 <p><strong>Standard Error</strong> – These are the standard errors associated with the coefficients. The standard error is used for testing whether the parameter is significantly different from zero by dividing the parameter estimate by the standard error to obtain a t-value (see the column with t-values and p-values). The standard errors can also be used to form a confidence interval for the parameter.</p>
 <p><strong>t Value and Pr &gt; |t|</strong>– These columns provide the t-value and 2 tailed p-value used in testing the null hypothesis that the coefficient/parameter is zero. If you use a 2 tailed test, then you would compare each p-value to your pre-selected value of alpha. Coefficients having p-values less than alpha are statistically significant. For example, if you chose alpha to be 0.05, coefficients having a p-value of 0.05 or less would be statistically significant (i.e., you can reject the null hypothesis and say that the coefficient is significantly different from zero). The larger the test statistic, the less likely it is that the results occurred by chance.</p>
 <p><b></b></p><b>
 <p style="text-align: center; color:#007FFF;">
-</p><pre><code>The p-value of the tests for significance of height(0.00201) and oil (0.00278) are less  than 0.05, so we reject the null hypothesis that these estimated coefficients are null.  However, the p-value of protein(0.89515) and size(0.43361) are greater than 0.05 so we  cannot reject the null hypothesis that its estimated coefficient is zero.</code></pre>
+</p><p>The p-value of the tests for significance of height(0.00201) and oil (0.00278) are less than 0.05, so we reject the null hypothesis that these estimated coefficients are null. However, the p-value of protein(0.89515) and size(0.43361) are greater than 0.05 so we cannot reject the null hypothesis that its estimated coefficient is zero.</p>
 <p></p>
 </b><p><b></b></p>
 <p><strong>F Value and Pr &gt; F:</strong> These values are used to answer the question “Do the independent variables reliably predict the dependent variable?”. The p-value is compared to the alpha level (typically 0.05) and, if smaller, you can conclude “Yes, the independent variables reliably predict the dependent variable”. We could say that the group of variables <strong>protein, height, oil and size</strong> can be used to reliably predict <strong>yield</strong> (the dependent variable). If the p-value were greater than 0.05, we would say that the group of independent variables does not show a statistically significant relationship with the dependent variable, or that the group of independent variables do not reliably predict the dependent variable. Note that this is an overall significance test assessing whether the group of independent variables when used together reliably predict the dependent variable and does not address the ability of any of the independent variables to predict the dependent variable. The ability of each individual independent variable to predict the dependent variable is addressed in the table above where each of the individual variables is listed.</p>
 <p><b></b></p><b>
 <p style="text-align: center; color:#007FFF;">
-</p><pre><code>The F-value is 25.29 and the p-value associated with this F value is very small (9.459e^-12). Since the p-value is less than the 0.05, we can say that the  independent variables (protein, height, size and oil ) can predict the yield of      soybeans.</code></pre>
+</p><p>The F-value is 25.29 and the p-value associated with this F value is very small (9.459e^-12). Since the p-value is less than the 0.05, we can say that the independent variables (protein, height, size and oil ) can predict the yield of soybeans.</p>
 <p></p>
 </b><p><b></b></p>
 <p><strong>R-Square</strong> – R-Square is the proportion of variance in the dependent variable (<strong>yield</strong>) which can be predicted from the independent variables (<strong>protein, height, oil and size</strong>). Note that this is an overall measure of the strength of association and does not reflect the extent to which any independent variable is associated with the dependent variable.</p>

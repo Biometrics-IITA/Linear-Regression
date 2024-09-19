@@ -166,13 +166,11 @@ The summary output provides:
 
 <p style="text-align: center; color:#007FFF;">
 
-```         
-  Min: Minimum residual value (-1.06151)   
-  1Q: First quartile, the value below which the 25% of the residual lie (-0.30054).   
-  Median: Median, the midpoint of the residual values, separating the lower 50% from the upper 50% (0.01748).    
-  3Q: Third quartile, the value below which 75% of the residuals lie (0.29192).   
-  Max: Maximum residual value (1.13346)
-```
+Min: Minimum residual value (-1.06151)\
+1Q: First quartile, the value below which the 25% of the residual lie (-0.30054).\
+Median: Median, the midpoint of the residual values, separating the lower 50% from the upper 50% (0.01748).\
+3Q: Third quartile, the value below which 75% of the residuals lie (0.29192).\
+Max: Maximum residual value (1.13346)
 
 </p>
 
@@ -186,11 +184,9 @@ While the summary output can provide an initial insight into the distribution of
 
 <p style="text-align: center; color:#007FFF;">
 
-```         
- In this example, the intercept term in the model is estimated to be 3.0799 and is significantly different from zero. 
- 
- The residual standard error is: 0.4327 on 56 degree of freedom (df). 
-```
+In this example, the intercept term in the model is estimated to be 3.0799 and is significantly different from zero.
+
+The residual standard error is: 0.4327 on 56 degree of freedom (df).
 
 </p>
 
@@ -200,11 +196,9 @@ While the summary output can provide an initial insight into the distribution of
 
 <p style="text-align: center; color:#007FFF;">
 
-```         
 For example in our model with a R square of 0.2018 which indicate that 20.2% of the variability in the yield is accounted for by the height of the cowpea, A significant amount of the information is not explained by the model.
 
-Consequently, additional predictors can be added to the model to improve the quality of the fit.  
-```
+Consequently, additional predictors can be added to the model to improve the quality of the fit.
 
 </p>
 
@@ -218,13 +212,11 @@ Consequently, additional predictors can be added to the model to improve the qua
 
 <p style="text-align: center; color:#007FFF;">
 
-```         
- Here, the F-statistic is 14.15 with a p-value of 0.0004049 which is less than 0.05. This means that the regression fits well.   
- 
- Since the p-value of 0.0004049 is less than 0.05, so we reject the hypothesis that its estimate coefficient is zero. The coefficient is -1.1692 with a standard error of 0.3108. 
- 
- So the model predicts that the yeild of cowpea will decrease by -1.1692 metric tons for 1 meter of cowpea height.  
-```
+Here, the F-statistic is 14.15 with a p-value of 0.0004049 which is less than 0.05. This means that the regression fits well.
+
+Since the p-value of 0.0004049 is less than 0.05, so we reject the hypothesis that its estimate coefficient is zero. The coefficient is -1.1692 with a standard error of 0.3108.
+
+So the model predicts that the yeild of cowpea will decrease by -1.1692 metric tons for 1 meter of cowpea height.
 
 </p>
 
@@ -310,9 +302,7 @@ summary(Yield.Height.Size)
 
 <p style="text-align: center; color:#007FFF;">
 
-```         
-It shows that for 1 metric tons/hectare increase in yield, there is an estimated  0.005 decrease in protein, 1.326 increase in height, 0.024 increase in size and 0.212 increase in oil.
-```
+It shows that for 1 metric tons/hectare increase in yield, there is an estimated 0.005 decrease in protein, 1.326 increase in height, 0.024 increase in size and 0.212 increase in oil.
 
 </p>
 
@@ -326,9 +316,7 @@ It shows that for 1 metric tons/hectare increase in yield, there is an estimated
 
 <p style="text-align: center; color:#007FFF;">
 
-```         
-The p-value of the tests for significance of height(0.00201) and oil (0.00278) are less  than 0.05, so we reject the null hypothesis that these estimated coefficients are null.  However, the p-value of protein(0.89515) and size(0.43361) are greater than 0.05 so we  cannot reject the null hypothesis that its estimated coefficient is zero.
-```
+The p-value of the tests for significance of height(0.00201) and oil (0.00278) are less than 0.05, so we reject the null hypothesis that these estimated coefficients are null. However, the p-value of protein(0.89515) and size(0.43361) are greater than 0.05 so we cannot reject the null hypothesis that its estimated coefficient is zero.
 
 </p>
 
@@ -340,9 +328,7 @@ The p-value of the tests for significance of height(0.00201) and oil (0.00278) a
 
 <p style="text-align: center; color:#007FFF;">
 
-```         
-The F-value is 25.29 and the p-value associated with this F value is very small (9.459e^-12). Since the p-value is less than the 0.05, we can say that the  independent variables (protein, height, size and oil ) can predict the yield of      soybeans.
-```
+The F-value is 25.29 and the p-value associated with this F value is very small (9.459e\^-12). Since the p-value is less than the 0.05, we can say that the independent variables (protein, height, size and oil ) can predict the yield of soybeans.
 
 </p>
 
