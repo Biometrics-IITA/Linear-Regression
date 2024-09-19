@@ -370,6 +370,6 @@ The multiple R-squared is 0.4824 with p-value of $1.18e^{-06}$ indicates that th
 
 The fitted regression line that relates protein, height, size and oil to yield is described by the equation:
 
-\*\*yield = -3.413157 - 0.004925(protein) + 1.326282(height) + 0.0023743(size) + 0.212057(oil)\*\*
+yield = -3.413157 - 0.004925(protein) + 1.326282(height) + 0.0023743(size) + 0.212057(oil)
 
 ## 
